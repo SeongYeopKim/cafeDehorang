@@ -1,0 +1,20 @@
+$(document).ready(function(){
+	$("#nav_index").click(function(){
+		window.location="./index.jsp";
+	});
+	$("#nav_main").click(function(){
+		window.location="./main.jsp";
+	});
+	$("#nav_bbs").click(function(){
+		window.location="./BBSListServlet";
+	});
+	$("#nav_workManager").click(function(){
+		window.location="./workManager.jsp";
+	});
+	$("#nav_myInfo").click(function(){
+		window.location="./myInfo.jsp";
+	});
+	$("#nav_managerPage").click(function(){
+		window.location="./managerPage.jsp";
+	});
+});

@@ -1,0 +1,62 @@
+<taglib xmlns="http://java.sun.com/xml/ns/javaee" version="2.1">
+<tlib-version>1.0</tlib-version>
+<short-name>pageing</short-name>
+	<tag>
+		<name>page</name>
+		<tag-class>com.kpuworld.tag.Paging</tag-class>
+		<body-content>empty</body-content>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	<tag>
+		<name>cDate</name>
+		<tag-class>com.kpuworld.tag.DateChange</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>time</name>
+			<type>java.lang.String</type>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>sendMail</name>
+		<tag-class>com.kpuworld.tag.SendMail</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>key</name>
+			<type>java.lang.String</type>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>target</name>
+			<type>java.lang.String</type>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>boardTitle</name>
+		<tag-class>com.kpuworld.tag.BoardTitleTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>modSrl</name>
+			<type>java.lang.String</type>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>catSrl</name>
+			<type>java.lang.String</type>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>adminCheck</name>
+		<tag-class>com.kpuworld.tag.SuperVisor</tag-class>
+		<body-content>scriptless</body-content>
+		<dynamic-attributes>true</dynamic-attributes>
+		<attribute>
+			<name>member</name>
+			<type>com.kpuworld.bean.Member</type>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
+
